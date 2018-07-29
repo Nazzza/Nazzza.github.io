@@ -1,0 +1,201 @@
+
+
+
+label {
+    position: relative;
+    display: block;
+    color: #404040;
+    float: left;
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 6px;
+    text-align: left;
+    padding-right: 0;
+    border-right: 0;
+    margin-right: 0;
+    width: 2%;
+}
+
+label, input, select, textarea {
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+input, textarea, select {
+    display: block;
+    position: relative;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #CCCCCC;
+    color: #808080;
+    display: inline-block;
+    font-size: 13px;
+    height: 18px;
+    line-height: 18px;
+    padding: 4px;
+    width: 100%;
+}
+
+#bottom {
+    background: linear-gradient( #e8f6ff, #f4e0ff);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-weight: bold;
+    outline: 1px solid;
+    box-shadow: 2px, 2px, 5px, #7f72a8;
+    box-shadow: 0px 2px 7px #742e82;
+    outline-color: #7f72a8;
+    font-size: 1.6em;
+    position: fixed;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    margin: 1% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+}
+
+select {
+    display: block;
+    height: 27px;
+    line-height: 27px;
+}
+
+#segment .input {
+    display: block;
+    margin-left: 50%;
+}
+
+#lel {
+ 
+    position: relative;
+    text-align: right;
+    right: 20%;
+
+}
+#segment .line {
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+    left: 0px;
+}
+
+#segment2 .line {
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+    left: 0px;
+}
+
+#segment3 .line {
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+    left: 0px;
+}
+
+
+
+#padder {
+    display: block;
+    margin-top: 4px;
+}
+
+#mybuttons {
+    height: 32px;
+    border-radius: 3px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    background-color: #c6b9ce; /* Green */
+    border: none;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    left: 25%;
+}
+
+    #mybuttons:hover {
+        background-color: #a58db5;
+    }
+    #mybuttons:active {
+        background-color: #87638c;
+   
+        /*transform: translateY(4px);*/
+    }
+
+#segment {
+    border-radius: 12px;
+    background: linear-gradient(to right, #ebd1ff 0%, #fae0ff 100%);
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    display: block;
+    position: relative;
+    //border: 3px dotted;
+    border-color: mediumpurple;
+    box-shadow: 0px 2px 7px #742e82;
+}
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    text-align: center;
+}
+
+#wrapper {
+    margin-top: 120px;
+    position: relative;
+    width: 20%;
+    left: 40%;
+}
+
+#wrapper2 {
+    margin-top: 120px;
+    position: relative;
+    width: 20%;
+    left: 40%;
+}
+
+#wrapper3 {
+    margin-top: 120px;
+    position: relative;
+    width: 20%;
+    left: 40%;
+}
+#segment2 {
+    border-radius: 12px;
+    background: linear-gradient(to right, #ccfffc 0%, #ccfcee 100%);
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    display: block;
+    position: relative;
+    //border: 3px dotted;
+    border-color: #4989c1;
+    box-shadow: 0px 2px 7px #4989c1;
+}
+#segment3 {
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffeead 0%, #ffe2af 100%);
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    display: block;
+    position: relative;
+    //border: 3px dotted;
+    border-color: #b7642d;
+    box-shadow: 0px 2px 7px #b7642d;
+}
