@@ -56,6 +56,10 @@ function GetContent(x) {
 
 
   // var tempElem = document.getElementById("elemList").innerHTML;
+
+    if (document.getElementById("elemList").innerHTML.length != 0) {
+        document.getElementById("elemList").innerHTML += "+";
+    }
     document.getElementById("elemList").innerHTML += x;
 
     // for (var x in tempElem)
