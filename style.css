@@ -123,13 +123,13 @@ select {
     background-color: #c6b9ce; /* Green */
     border: none;
     color: white;
-    width: 50%;
+    width: 70%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     position: relative;
-    left: 25%;
+    left: 15%;
 }
 
     #mybuttons:hover {
@@ -222,17 +222,15 @@ h1 {
 }
 
 .grid-container {
-
     border-color: #4989c1;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555% 5.555%;
     background: linear-gradient( to right, #ceefff 0%, #d8fdff 100%);
     padding: 10px;
     position: relative;
     right: 0px;
-    
 }
 
 .grid-item {
