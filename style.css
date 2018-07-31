@@ -14,7 +14,7 @@ label {
     border-right: 0;
     margin-right: 0;
     width: 2%;
-}
+}   
 
 label, input, select, textarea {
     display: block;
@@ -188,7 +188,7 @@ h1 {
 #segment2 {
     border-radius: 12px;
     background: linear-gradient(to right, #ccfffc 0%, #ccfcee 100%);
-    padding-top: 6px;
+    padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 24px;
@@ -201,7 +201,7 @@ h1 {
 #segment3 {
     border-radius: 12px;
     background: linear-gradient(to right, #ffeead 0%, #ffe2af 100%);
-    padding-top: 6px;
+    padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 24px;
@@ -391,6 +391,22 @@ p{
 
     #tranm:hover {
         background: linear-gradient( to right, #a3b76c 0%, #aeb76c 100%);
+    }
+
+#toid {
+    background: linear-gradient( to right, #fff875 0%, #fff0aa 100%);
+}
+
+    #toid:hover {
+        background: linear-gradient( to right, #a2a269 0%, #a3996a 100%);
+    }
+
+#gens {
+    background: linear-gradient( to right, #9bf5ff 0%, #91e7ff 100%);
+}
+
+    #gens:hover {
+        background: linear-gradient( to right, #52929b 0%, #538b9b 100%);
     }
 
 

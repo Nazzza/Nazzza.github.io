@@ -9,6 +9,9 @@
 </script>
 
 <head>
+    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
+    <title>Chemistry Calcs</title>
+    <meta name="keywords" content="ultramegaswaggertester">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -107,7 +110,6 @@
                 <div class="grid-item-empty">3</div>
                 <div class="grid-item-empty">4</div>
                 <div class="grid-item-empty">5</div>
-
                 <div class="grid-item-empty">6</div>
                 <div class="grid-item-empty">7</div>
                 <div class="grid-item-empty">8</div>
@@ -134,11 +136,11 @@
                 <div class="grid-item-empty">28</div>
                 <div class="grid-item-empty">29</div>
                 <div class="grid-item-empty">30</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">B</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">B</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">C</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">N</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">O</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">F</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">F</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ne</div>
 
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Na</div>
@@ -154,10 +156,10 @@
                 <div class="grid-item-empty">29</div>
                 <div class="grid-item-empty">30</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Al</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Si</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Si</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">P</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">S</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Cl</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">Cl</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ar</div>
 
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">K</div>
@@ -173,11 +175,30 @@
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Cu</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Zn</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Ga</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Ge</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">As</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Ge</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">As</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Se</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Br</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">Br</div>
                 <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Kr</div>
+
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Rb</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Sr</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Y</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Zr</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Nb</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Mo</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Tc</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ru</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Rh</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Pd</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ag</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Cd</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">In</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Sn</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Sb</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Te</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">I</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Xe</div>
 
 
 
@@ -277,12 +298,12 @@
 
     <div id="wrapper3">
 
-
+        <h3>Universal Converter<br />(WorkInProgress)</h3>
         <div id="segment3">
-            <h1>example 3 dont use</h1>
+
             <div class="line">
 
-                <label for="input">Moles</label>
+                <label for="input">Atmospheres</label>
                 <div class="input">
                     <input type="text" size="30" />
                 </div>
@@ -290,21 +311,21 @@
 
             <div class="line">
 
-                <label for="input">Volume</label>
+                <label for="input">Fahrenheit</label>
                 <div class="input">
                     <input type="text" size="30">
                 </div>
             </div>
 
             <div class="line">
-                <label for="input">Temperature</label>
+                <label for="input">PSI</label>
                 <div class="input">
                     <input type="text" size="30">
                 </div>
             </div>
 
             <div class="line">
-                <label>Pressure</label>
+                <label>Kelvin</label>
                 <div class="input">
                     <input type="text">
                 </div>
@@ -316,39 +337,39 @@
 
         <!-- <div id="segment2">
 
-            <div class="line">
+        <div class="line">
 
-                <label for="input">Moles</label>
-                <div class="input">
-                    <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
-                </div>
+            <label for="input">Moles</label>
+            <div class="input">
+                <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
             </div>
+        </div>
 
-            <div class="line">
+        <div class="line">
 
-                <label for="input">Volume</label>
-                <div class="input">
-                    <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-                </div>
+            <label for="input">Volume</label>
+            <div class="input">
+                <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <div class="line">
-                <label for="input">Temperature</label>
-                <div class="input">
-                    <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-                </div>
+        <div class="line">
+            <label for="input">Temperature</label>
+            <div class="input">
+                <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <div class="line">
-                <label>Pressure</label>
-                <div class="input">
-                    <input type="text" id="pres" onkeypress="return isNumber(event)">
-                </div>
+        <div class="line">
+            <label>Pressure</label>
+            <div class="input">
+                <input type="text" id="pres" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
+        <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
 
-        </div> -->
+    </div> -->
 
     </div>
 

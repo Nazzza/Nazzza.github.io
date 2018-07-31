@@ -135,7 +135,43 @@ function GetContent(x) {
         mm += 79.904 ;
     } else if (x == "Kr") {
         mm += 83.798;
-    } 
+    } else if (x == "Rb") {
+        mm += 85.4678;
+    } else if (x == "Sr") {
+        mm += 87.62;
+    } else if (x == "Y") {
+        mm += 88.90585;
+    } else if (x == "Zr") {
+        mm += 91.224;
+    } else if (x == "Nb") {
+        mm += 92.90638;
+    } else if (x == "Mo") {
+        mm += 95.94 ;
+    } else if (x == "Tc") {
+        mm += 98;
+    } else if (x == "Ru") {
+        mm += 101.07;
+    } else if (x == "Rh") {
+        mm += 102.9055;
+    } else if (x == "Pd") {
+        mm += 106.42;
+    } else if (x == "Ag") {
+        mm += 107.8682;
+    } else if (x == "Cd") {
+        mm += 112.411;
+    } else if (x == "In") {
+        mm += 114.818;
+    } else if (x == "Sn") {
+        mm += 118.71;
+    } else if (x == "Sb") {
+        mm += 121.76;
+    } else if (x == "Te") {
+        mm += 78.96;
+    } else if (x == "I") {
+        mm += 126.90447;
+    } else if (x == "Xe") {
+        mm += 131.293;
+    }
 
 
 
