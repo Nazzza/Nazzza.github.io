@@ -19,9 +19,9 @@
 
     <div id="wrapper">
 
+        <h3>gas calculator</h3>
 
         <div id="segment">
-            <h1>gas calculator</h1>
             <div class="line">
 
                 <label for="input">Moles</label>
@@ -58,39 +58,142 @@
 
         <!-- <div id="segment2">
 
-            <div class="line">
+        <div class="line">
 
-                <label for="input">Moles</label>
-                <div class="input">
-                    <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
-                </div>
+            <label for="input">Moles</label>
+            <div class="input">
+                <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
             </div>
+        </div>
 
-            <div class="line">
+        <div class="line">
 
-                <label for="input">Volume</label>
-                <div class="input">
-                    <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-                </div>
+            <label for="input">Volume</label>
+            <div class="input">
+                <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <div class="line">
-                <label for="input">Temperature</label>
-                <div class="input">
-                    <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-                </div>
+        <div class="line">
+            <label for="input">Temperature</label>
+            <div class="input">
+                <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <div class="line">
-                <label>Pressure</label>
-                <div class="input">
-                    <input type="text" id="pres" onkeypress="return isNumber(event)">
-                </div>
+        <div class="line">
+            <label>Pressure</label>
+            <div class="input">
+                <input type="text" id="pres" onkeypress="return isNumber(event)">
             </div>
+        </div>
 
-            <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
+        <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
 
-        </div> -->
+    </div> -->
+
+    </div>
+    <div id="wholeTable">
+        <h3>Perodic Table</h3>
+
+        <div id="ptable">
+
+
+            <div class="grid-container">
+
+
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="hy">H</div>
+                <div class="grid-item-empty">2</div>
+                <div class="grid-item-empty">3</div>
+                <div class="grid-item-empty">4</div>
+                <div class="grid-item-empty">5</div>
+
+                <div class="grid-item-empty">6</div>
+                <div class="grid-item-empty">7</div>
+                <div class="grid-item-empty">8</div>
+                <div class="grid-item-empty">9</div>
+                <div class="grid-item-empty">10</div>
+                <div class="grid-item-empty">11</div>
+                <div class="grid-item-empty">12</div>
+                <div class="grid-item-empty">13</div>
+                <div class="grid-item-empty">14</div>
+                <div class="grid-item-empty">15</div>
+                <div class="grid-item-empty">16</div>
+                <div class="grid-item-empty">17</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">He</div>
+
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Li</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Be</div>
+                <div class="grid-item-empty">21</div>
+                <div class="grid-item-empty">22</div>
+                <div class="grid-item-empty">23</div>
+                <div class="grid-item-empty">24</div>
+                <div class="grid-item-empty">25</div>
+                <div class="grid-item-empty">26</div>
+                <div class="grid-item-empty">27</div>
+                <div class="grid-item-empty">28</div>
+                <div class="grid-item-empty">29</div>
+                <div class="grid-item-empty">30</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">B</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">C</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">N</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">O</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">F</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ne</div>
+
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Na</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Mg</div>
+                <div class="grid-item-empty">21</div>
+                <div class="grid-item-empty">22</div>
+                <div class="grid-item-empty">23</div>
+                <div class="grid-item-empty">24</div>
+                <div class="grid-item-empty">25</div>
+                <div class="grid-item-empty">26</div>
+                <div class="grid-item-empty">27</div>
+                <div class="grid-item-empty">28</div>
+                <div class="grid-item-empty">29</div>
+                <div class="grid-item-empty">30</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Al</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Si</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">P</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">S</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Cl</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ar</div>
+
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">K</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Ca</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Sc</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ti</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">V</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Cr</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Mn</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Fe</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Co</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ni</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Cu</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Zn</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Ga</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Ge</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">As</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Se</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Br</div>
+                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Kr</div>
+
+
+
+            </div>
+        </div>
+
+        <div id="textBottomPtable">
+
+            <button onclick="Clear();" id="clearButton">Clear</button>
+            <input type="text" id="massOfElem" />
+            <button onclick="GetMass();" id="massButton">Get Mass</button>
+            <input type="text" id="molesInElem" />
+            <button onclick="GetMoles();" id="molesButton">Get Moles</button>
+
+            <p id="elemList"></p>
+        </div>
 
     </div>
 
@@ -104,7 +207,7 @@
 
                 <label for="input">Moles</label>
                 <div class="input">
-                    <input type="text" size="30"  />
+                    <input type="text" size="30" />
                 </div>
             </div>
 
@@ -119,18 +222,18 @@
             <div class="line">
                 <label for="input">Temperature</label>
                 <div class="input">
-                    <input type="text" size="30" >
+                    <input type="text" size="30">
                 </div>
             </div>
 
             <div class="line">
                 <label>Pressure</label>
                 <div class="input">
-                    <input type="text" >
+                    <input type="text">
                 </div>
             </div>
 
-     
+
 
         </div>
 
@@ -207,7 +310,7 @@
                 </div>
             </div>
 
-         
+
 
         </div>
 
