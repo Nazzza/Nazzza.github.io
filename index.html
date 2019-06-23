@@ -3,385 +3,212 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-</script>
-
 <head>
-    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
-    <title>Chemistry Calcs</title>
-    <meta name="keywords" content="ultramegaswaggertester">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-    <title></title>
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt&display=swap" rel="stylesheet">
+    <title>Ukiyo</title>
+    <link rel="icon" href="ico.ico" type="image/x-icon" />
 </head>
+
 <body>
+    <div class="bd-image"></div>
+    <div class="TopMenu">
+        <div class="tItem"><h4>A Novel and Author</h4></div>
+        <div class="tItem"><h4>A Closer Analysis</h4></div>
+        <div class="tItem"><h4>A Creative Take</h4></div>
 
-    <div id="wrapper">
-
-        <h3>gas calculator</h3>
-
-        <div id="segment">
-            <div class="line">
-
-                <label for="input">Moles</label>
-                <div class="input">
-                    <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
-                </div>
-            </div>
-
-            <div class="line">
-
-                <label for="input">Volume</label>
-                <div class="input">
-                    <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-                </div>
-            </div>
-
-            <div class="line">
-                <label for="input">Temperature</label>
-                <div class="input">
-                    <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-                </div>
-            </div>
-
-            <div class="line">
-                <label>Pressure</label>
-                <div class="input">
-                    <input type="text" id="pres" onkeypress="return isNumber(event)">
-                </div>
-            </div>
-
-            <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
-
-        </div>
-
-        <!-- <div id="segment2">
-
-        <div class="line">
-
-            <label for="input">Moles</label>
-            <div class="input">
-                <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
-            </div>
-        </div>
-
-        <div class="line">
-
-            <label for="input">Volume</label>
-            <div class="input">
-                <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label for="input">Temperature</label>
-            <div class="input">
-                <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label>Pressure</label>
-            <div class="input">
-                <input type="text" id="pres" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
-
-    </div> -->
 
     </div>
-    <div id="wholeTable">
-        <h3>Perodic Table</h3>
+    <!--<div class="SideMenu">
+        <div id="MenuSymb"><div id="Flag"></div></div>
+        <div class="Item"><h2>Main Event</h2></div>
+        <div class="Item"><h2>Plain Text</h2></div>
+        <div class="Item"><h2>Image Gallery</h2></div>
 
-        <div id="ptable">
+    </div>-->
+    <div class="PageScroll">
+        <!--<div class="TopBanner"><img src="Artisti.png" class="Image" /></div>-->
+        <div class="Pad"></div>
+        <h3>
+            A snippet of the the 2017 publishing of Kazuo Ishiguro's "An Artist of the Floating World", simple used to provide context and style that the publishers associated with the novel.
+            <br />Imaged Owned by Faber, photographed by John Dakers, Edited by Myself.
+            <br />Created by Myself.
+        </h3>
+        <img src="Artisti.png" class="Image" />
+        <div class="Content">
+            <h1>About Kazuo Ishiguro</h1> <br />
 
-
-            <div class="grid-container">
-
-
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="hy">H</div>
-                <div class="grid-item-empty">2</div>
-                <div class="grid-item-empty">3</div>
-                <div class="grid-item-empty">4</div>
-                <div class="grid-item-empty">5</div>
-                <div class="grid-item-empty">6</div>
-                <div class="grid-item-empty">7</div>
-                <div class="grid-item-empty">8</div>
-                <div class="grid-item-empty">9</div>
-                <div class="grid-item-empty">10</div>
-                <div class="grid-item-empty">11</div>
-                <div class="grid-item-empty">12</div>
-                <div class="grid-item-empty">13</div>
-                <div class="grid-item-empty">14</div>
-                <div class="grid-item-empty">15</div>
-                <div class="grid-item-empty">16</div>
-                <div class="grid-item-empty">17</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">He</div>
-
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Li</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Be</div>
-                <div class="grid-item-empty">21</div>
-                <div class="grid-item-empty">22</div>
-                <div class="grid-item-empty">23</div>
-                <div class="grid-item-empty">24</div>
-                <div class="grid-item-empty">25</div>
-                <div class="grid-item-empty">26</div>
-                <div class="grid-item-empty">27</div>
-                <div class="grid-item-empty">28</div>
-                <div class="grid-item-empty">29</div>
-                <div class="grid-item-empty">30</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">B</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">C</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">N</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">O</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">F</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ne</div>
-
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Na</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Mg</div>
-                <div class="grid-item-empty">21</div>
-                <div class="grid-item-empty">22</div>
-                <div class="grid-item-empty">23</div>
-                <div class="grid-item-empty">24</div>
-                <div class="grid-item-empty">25</div>
-                <div class="grid-item-empty">26</div>
-                <div class="grid-item-empty">27</div>
-                <div class="grid-item-empty">28</div>
-                <div class="grid-item-empty">29</div>
-                <div class="grid-item-empty">30</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Al</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Si</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">P</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">S</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">Cl</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Ar</div>
-
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">K</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Ca</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Sc</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ti</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">V</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Cr</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Mn</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Fe</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Co</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ni</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Cu</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Zn</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Ga</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Ge</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">As</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nonm">Se</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">Br</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Kr</div>
-
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alkm">Rb</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="alke">Sr</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Y</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Zr</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Nb</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Mo</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Tc</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ru</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Rh</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Pd</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="tranm">Ag</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Cd</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">In</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="porm">Sn</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Sb</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="toid">Te</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="gens">I</div>
-                <div onclick='GetContent(innerHTML)' class="grid-item" id="nbg">Xe</div>
-
-
-
-            </div>
+            <p>
+                Sir Kazuo Ishiguro, born November of 1954 is  British novelist with a Japense ethnicity. Born in Nagasaki Japan and moving to Britain in early childhood, almost all his works are inspired from Japanes culture and history, however due to his upbringing being mostly foreign from Japan, he has often felt somewhat as an imposter to be speaking on such matters, however this mentality fails to be reflected in the critical acclaim his work receives. Ishiguro has written screenplays, songs, short stories as well as full fledged novels, the latter of which have all held nominations for major award bar from two. One of his works “An Artist of the floating world” has won the Costa ‘Book of The Year Award’ and a nobel prize in literature.
+            </p>
         </div>
+        <h3>
+            Red light districts have been called such due to the lighting of red lanterns indicating vacancy at the brothels,
+            The soft red hues of sensual indulgence is a common theme amongst many medias to this day.
+            This image is an artistic stylisation depicting a red light district present in the Floating World of Edo Japan.
+            <br />Created by Myself.
+        </h3>
+        <img src="Light.png" class="Image" />
 
-        <div id="textBottomPtable">
-
-            <button onclick="Clear();" id="clearButton">Clear</button>
-            <input type="text" id="massOfElem" />
-            <button onclick="GetMass();" id="massButton">Get Mass</button>
-            <input type="text" id="molesInElem" />
-            <button onclick="GetMoles();" id="molesButton">Get Moles</button>
-
-            <p id="elemList"></p>
+        <div class="Content">
+            <h1>The Socio-Historical Context of The Novel</h1>
+            <p>
+                The novel takes place in a war recovering ‘Unnamed’ city of Japan, Set a couple years after its surrender in 1945. The novel explores themes of tradition vs new age values. A common aspect of this novel, one of which its name stems, is the idea of ‘The Floating World’,  while many meanings may be derived from this, the Floating World refers to ‘Ukiyo’, an expression of the leisure districts and the new economical influx within Edo Japan. As the idea of the Floating World opened up in Edo and its sister cities in the early 1600s, society and culture shifted into this new state, a soft sensual and pleasant; temptatious, mischievous and somewhat audacious mindset. The Floating World saw restaurensts, dinners, cinemas, woodblock paintings and galleries, as well as the famous Red Light District.
+            </p>
         </div>
-
-    </div>
-
-
-    <div id="wrapper2">
-
-        <h3>Concentration Calculator <br /> (WorkInProgress)</h3>
-
-        <div id="segment2">
-            <div class="line">
-
-                <label for="input">MolarMass</label>
-                <div class="input">
-                    <input type="text" size="30" />
-                </div>
-            </div>
-
-            <div class="line">
-
-                <label for="input">MassOfSolute</label>
-                <div class="input">
-                    <input type="text" size="30">
-                </div>
-            </div>
-
-            <div class="line">
-                <label for="input">NetVolume</label>
-                <div class="input">
-                    <input type="text" size="30">
-                </div>
-            </div>
-
-            <div class="line">
-                <label>Concentration</label>
-                <div class="input">
-                    <input type="text">
-                </div>
-            </div>
+        <h3>
+            Restaurants, diners and bars were an ever present way to spend leisure time.
+            Food, drink and an atmospheric company provided relaxation in the Floating World.
+            Depicted here is a Sushi bar with gohan rice and green tea, with a deep, rich and cozy tonal palette, meant to reflect the ambiance of bars within the Floating World.
+            <br />Created by Myself.
+        </h3>
+        <img src="Bar.png" class="Image" />
+        <div class="Content">
+            <h1>A Brief Synopsis</h1>
 
 
+            <p>
+                The novel follows Masuji Ono as he recalls back and upon his life after the war and his role within, a lot of the world building is more implicit, derrived from early life amd pre war events interpsoced his more modern life amogst his , The follows not an archetypal path, it borrows elements fromk a non linear story telling structure by branchin off into differnt times and place, howver most of the novel resied in one cotnius timeframe of a present day Ono.
+
+                The book opens up with with the taile of his home, how he aquir4ed it, and the destruicn its met since
+            </p>
 
         </div>
 
-        <!-- <div id="segment2">
+        <img src="Flag.png" class="Image" />
+        <div class="Content">
+            <h1>A Stimulus of Understanding  </h1>
 
-        <div class="line">
+            <p>
+                As life is learned, and the material world seemingly the creator of such, the nature of identity is shaped through a co-creational understanding of the self and where it resigns within its world.
 
-            <label for="input">Moles</label>
-            <div class="input">
-                <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
+                Weather looked upon from a deterministic viewpoint, seeing oneself as separate to the events constructed around them, or and Idealistic one, where consciousness and material are merely equal energies resonating their existence as one. Identity and belief will manifest into a shared reality, through the eyes of love or fear.
+
+            </p>
+        </div>
+        <div class="Content">
+            <h1>Imprints, Impressions and the Vulnerability of Youth</h1>
+
+            <p>
+                Whether or not identification with the body starts at birth or conception, the following years guide the most fundamental beliefs of self. Childhood wonder is so intrinsic to personal identity as this is when the absorption of the external world most heavily imprints itself into the subconscious. It is said that the joy of childhood stems form a so called lack of understanding of the ‘real world’, however it is the learning of this real world through values and vision of a limited scoped based in fearful missteps of the ego that dissolve joy and its childlike nature. It is belief of limitation which eradicate the wonder of youth, setting out the downfall of being many associate with age. As new ears and new eyes grasp at making sense of the physical plane, the nurture they receive shapes the nature of their reality. When Ono is recalling his younger self, he speaks on events surrounding a source of inspiration within his identity, his painting. His narration heavily implicated that his father wished to eradicate this creative spark of which he deemed dangerous.
+                We can see the impact this had upon by not only his choice to reflect on it, but the lagunue used, the magnitude of impact a memory holds will shape how it is perceived. As memorial is multimodal, sensory imagery is used to by Ishiguro as a reflection of Onos recollections of the events following the discourse with his father,
+                “Coming across my mother in the darkness…
+                ‘There's a smell of burning around the house’...
+                My mother was silent…
+                ’It must be your Imagination.’ ”
+                The incorporation of scent, use of visual and auditory illustration not only erect an eerie atmospheric tone but also capture the multisensory way in which the mind stores memory, crafting a tangible feeling and showing the impact of this moment on young Ono, by incorporating more than one mode of communication Ishiguro is demostraintg hte impact this attains on onno
+
+                “Artists...  live in squalor and poverty. They inhabit a world which gives them every temptation to become weak-willed and depraved” A comment base out of fear, this direct dialogue acting as a pathos hook, attempting to nitill the same insecrity in his son, that he has within himself
+
+            </p>
+        </div>
+        <img src="Bamboo.png" class="Image" />
+        <div class="Content">
+            <h1>The Manifestations of a Damaged Psyche</h1>
+
+            <p>
+
+                By having fear and art being so closely bonded; the act of seeing his creation proceed  destruction, fear was instilled from that moment on linking his passion to a painful destruction.  At his core programming, Onos being resonates with that of a destructive pendulum, one which is fed via his creative energy. The novel addresses manifestation of the mind through its narrative of the war, and war propaganda Ono took part in. Kazuo Ishiguro shows the power of manifestation by first setting up the childhood trauma, and linking it to present events. In the novel Ono admits how his artwork may have halted the surrendering of Japan during the second world war, and thus lead to its ultimatum of destruction. Ishiguro shows how the cousness and reality are onterwoven, and why a da,maged snse of self results in a damged reality, it is important to note that, weather Onos actions were a direct cause of the devastiopn Japan faced, or insignicat, his damaged sense of self see it as causal within his personal reality.
+                im
+
+            </p>
+        </div>
+        <h3>
+            The Shrine of Meiji was destroyed in 1944 during the Tokyo air raids. The shrine served as a memorial to Emperor Meiji and his wife. The citizens then wishing to repent this loss of honor publicly funding it's restoration. The shrine underwent resection in 1958.
+
+            This piece Is simply meant to show a literal destruction of the land spoken about within the novel, in a stylistic manner.
+
+            <br /> Created by Myself.
+        </h3>
+        <img src="Bomb.png" class="Image" />
+        <div class="Content">
+            <h1>Reflection, Projection and Realisation</h1>
+
+            <p>
+
+
+                Early into the novel we see Ono’s grandson, Ichiro, a young a boystrous spirit woth similar creative drives as his dranfather, however younger than Onos recalled self, and far less disicpline, Early on we see Ichrios facination with the art surrounding Ono
+
+                Much as Ono's father attempted to snuff his creative flame through a fear that the way of the artist leads to an insecure livelihood, Onos reality possessed even greater misfortune, art was not merely an insecure lifestyle, but a destruction to life itself, thus the potential fear within him has evermore opportune to outweigh that of his fathers.  As Ichiro has shown interst in art, much like ono himself at that age, it surfaecs his own ipmpreins, Ono is all too familar with the limitaions of idenity adn when convesing with his grandson as hes playing around, sketpad dsicarded in the room,  they discuss the nature of Ichhiros play,
+                “Then tell me, who were you?”
+                “Lone rager!”
+                “Lone ranger? is that the cowboy?”
+                “Ichiro...wait a miment and listen… Its more intersint by far to pretedn to be someone like lord Yoshitsune… Ichiro liste… Ichiro, litesn to you Oji-san. Ichiro!”
+                We see this arguementeive adn almost heated dialgoue as a rtigger for Ono.
+                “
+
+
+                As Ichiro is apraoacihn a path that Ono himself as been down, its surfaces his own imprints,
+
+
+                By correcting his Grandsons behavoiur hes reinacting his own conditoining,  but by his ackoldmentg, and apology shortly after, implicltyly or not,a reaslitings has been made, one that is self aware due to the limitation placed upon him by his male rolde model, by saying that he can be what he wants, hes dovetaioling both fear and limitations, creating a healthier sense of self and identity in his grandson
+
+                We here the [hjrase a tortued artsits a lot, its for creatiden dieasl and beauties that a fare more sparse in this shared reality
+
+
+
+            </p>
+        </div>
+        <img src="Zilla.png" class="Image" />
+
+            <div class="Content">
+                <h1>A Creative Take</h1>
+
+                <p>
+
+
+                    Early into the novel we see Ono’s grandson, Ichiro, a young a boystrous spirit woth similar creative drives as his dranfather, however younger than Onos recalled self, and far less disicpline, Early on we see Ichrios facination with the art surrounding Ono
+
+                    Much as Ono's father attempted to snuff his creative flame through a fear that the way of the artist leads to an insecure livelihood, Onos reality possessed even greater misfortune, art was not merely an insecure lifestyle, but a destruction to life itself, thus the potential fear within him has evermore opportune to outweigh that of his fathers.  As Ichiro has shown interst in art, much like ono himself at that age, it surfaecs his own ipmpreins, Ono is all too familar with the limitaions of idenity adn when convesing with his grandson as hes playing around, sketpad dsicarded in the room,  they discuss the nature of Ichhiros play,
+                    “Then tell me, who were you?”
+                    “Lone rager!”
+                    “Lone ranger? is that the cowboy?”
+                    “Ichiro...wait a miment and listen… Its more intersint by far to pretedn to be someone like lord Yoshitsune… Ichiro liste… Ichiro, litesn to you Oji-san. Ichiro!”
+                    We see this arguementeive adn almost heated dialgoue as a rtigger for Ono.
+                    “
+
+
+                    As Ichiro is apraoacihn a path that Ono himself as been down, its surfaces his own imprints,
+
+
+                    By correcting his Grandsons behavoiur hes reinacting his own conditoining,  but by his ackoldmentg, and apology shortly after, implicltyly or not,a reaslitings has been made, one that is self aware due to the limitation placed upon him by his male rolde model, by saying that he can be what he wants, hes dovetaioling both fear and limitations, creating a healthier sense of self and identity in his grandson
+
+                    We here the [hjrase a tortued artsits a lot, its for creatiden dieasl and beauties that a fare more sparse in this shared reality
+
+
+
+                </p>
+            </div>
+            <div class="Content">
+                <h1>The Reflection</h1>
+
+                <p>
+
+
+                    Early into the novel we see Ono’s grandson, Ichiro, a young a boystrous spirit woth similar creative drives as his dranfather, however younger than Onos recalled self, and far less disicpline, Early on we see Ichrios facination with the art surrounding Ono
+
+                    Much as Ono's father attempted to snuff his creative flame through a fear that the way of the artist leads to an insecure livelihood, Onos reality possessed even greater misfortune, art was not merely an insecure lifestyle, but a destruction to life itself, thus the potential fear within him has evermore opportune to outweigh that of his fathers.  As Ichiro has shown interst in art, much like ono himself at that age, it surfaecs his own ipmpreins, Ono is all too familar with the limitaions of idenity adn when convesing with his grandson as hes playing around, sketpad dsicarded in the room,  they discuss the nature of Ichhiros play,
+                    “Then tell me, who were you?”
+                    “Lone rager!”
+                    “Lone ranger? is that the cowboy?”
+                    “Ichiro...wait a miment and listen… Its more intersint by far to pretedn to be someone like lord Yoshitsune… Ichiro liste… Ichiro, litesn to you Oji-san. Ichiro!”
+                    We see this arguementeive adn almost heated dialgoue as a rtigger for Ono.
+                    “
+
+
+                    As Ichiro is apraoacihn a path that Ono himself as been down, its surfaces his own imprints,
+
+
+                    By correcting his Grandsons behavoiur hes reinacting his own conditoining,  but by his ackoldmentg, and apology shortly after, implicltyly or not,a reaslitings has been made, one that is self aware due to the limitation placed upon him by his male rolde model, by saying that he can be what he wants, hes dovetaioling both fear and limitations, creating a healthier sense of self and identity in his grandson
+
+                    We here the [hjrase a tortued artsits a lot, its for creatiden dieasl and beauties that a fare more sparse in this shared reality
+
+
+
+                </p>
             </div>
         </div>
-
-        <div class="line">
-
-            <label for="input">Volume</label>
-            <div class="input">
-                <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label for="input">Temperature</label>
-            <div class="input">
-                <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label>Pressure</label>
-            <div class="input">
-                <input type="text" id="pres" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
-
-    </div> -->
-
-    </div>
-
-    <div id="wrapper3">
-
-        <h3>Universal Converter<br />(WorkInProgress)</h3>
-        <div id="segment3">
-
-            <div class="line">
-
-                <label for="input">Atmospheres</label>
-                <div class="input">
-                    <input type="text" size="30" />
-                </div>
-            </div>
-
-            <div class="line">
-
-                <label for="input">Fahrenheit</label>
-                <div class="input">
-                    <input type="text" size="30">
-                </div>
-            </div>
-
-            <div class="line">
-                <label for="input">PSI</label>
-                <div class="input">
-                    <input type="text" size="30">
-                </div>
-            </div>
-
-            <div class="line">
-                <label>Kelvin</label>
-                <div class="input">
-                    <input type="text">
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <!-- <div id="segment2">
-
-        <div class="line">
-
-            <label for="input">Moles</label>
-            <div class="input">
-                <input type="text" size="30" id="mols" onkeypress="return isNumber(event)" />
-            </div>
-        </div>
-
-        <div class="line">
-
-            <label for="input">Volume</label>
-            <div class="input">
-                <input type="text" size="30" id="volu" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label for="input">Temperature</label>
-            <div class="input">
-                <input type="text" size="30" id="temp" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <div class="line">
-            <label>Pressure</label>
-            <div class="input">
-                <input type="text" id="pres" onkeypress="return isNumber(event)">
-            </div>
-        </div>
-
-        <button type="button" id="mybuttons" onclick="Calculate()">Calculate Unknown</button>
-
-    </div> -->
-
-    </div>
-
-    <div id="bottom">
-
-        <h2>So like when we get more chem stuff thats forumla based ill just add a calculator to this site if anyone wants to use that bitch or nah</h2>
-
-    </div>
-
 </body>
-
-<script src="script.js"></script>
-
-
-
