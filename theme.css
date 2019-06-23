@@ -166,7 +166,7 @@ h3 {
     position: relative;
     width: 100%;
     background-color: purple;
-    height: 45vh;
+padding-bottom:3vh;
     /*-webkit-box-shadow: inset 0px 0px 244px -26px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 244px -26px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 244px -26px rgba(0,0,0,1);*/
